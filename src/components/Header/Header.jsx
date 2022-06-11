@@ -8,6 +8,7 @@ import Typography from "@mui/material";
 import { Box } from '@mui/system';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState, useEffect } from 'react';
+import user from '../../assets/user.svg'
 const Header = () => {
   const classes = useStyles();
   const [y, setY] = useState(100);
@@ -108,13 +109,16 @@ const style = {
                 to="/test">
                 <p>тестирование</p>
               </Link>
-              <button
+            
+                <img onClick={handleOpen} src={user} alt="" />
+              
+              {/* <button
                 style={{
                   backgroundColor: color,
                   color: text,
                 }} onClick={handleOpen}>
                 Войти
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
