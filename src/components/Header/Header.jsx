@@ -60,7 +60,8 @@ const style = {
         className={classes.header}
         style={{
           background: display,
-        }}>
+        }}
+        >
         <div className={classes.container}>
           <div className={classes.headerBlocks}>
             <Link
